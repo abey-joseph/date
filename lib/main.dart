@@ -15,6 +15,5 @@ void main() {
 }
 
 bool isMobile() {
-  String userAgent = html.window.navigator.userAgent.toLowerCase();
-  return userAgent.contains("mobi"); // Detects most mobile devices
+  return html.window.innerWidth! < 768; // Adjust threshold as needed
 }
